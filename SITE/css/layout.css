@@ -1,0 +1,28 @@
+#layout-header {width: 960px;}#layout-content {width: 960px;}#layout-footer {width: 960px;}#layout {min-width: 960px;}
+			#watermark {width: 960px;}
+			#columns {
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+			#column1 {
+				display: block;
+				width: 300px;
+			}
+			#column1-content {
+				min-height: 350px;
+			}
+			#column2 {
+				display: none;
+				width: 300px;
+			}
+			#column2-content {
+				min-height: 350px;
+			}
+			#content {
+				margin-left: 340px;
+				margin-right: 0px;
+			}
+			#content-content {
+				min-height: 350px;
+			}
+		

@@ -1,0 +1,27 @@
+									<div class="index-form-wrapper" id="register_form">
+	<form data-type="form-page">
+		<input type="hidden" id="reg_method" name="reg_method" value="email"/>
+		<div class="index-form-groups clearfix">
+    <div class="form-group">
+        <label for="register_form_mail_input" class="sr-only">Correo electrónico</label>
+        <input id="register_form_mail_input" class="form-control" placeholder="Correo electrónico" type="text" data-check="emailuniq" />
+    </div>
+    <div class="form-group">
+        <label for="register_form_password_input" class="sr-only">Contraseña (6 caracteres mínimo)</label>
+        <input id="register_form_password_input" class="form-control" placeholder="Contraseña (6 caracteres mínimo)" type="password" data-check="password" />
+    </div>
+    <div class="form-group">
+        <label for="register_form_username_input" class="sr-only">Nombre de usuario</label>
+        <input id="register_form_username_input" class="form-control" placeholder="Nombre de usuario" type="text" data-check="blogname" value="" />
+    </div>
+    <div class="form-group">
+        <div class="index-form-select">
+            <span class="icon icon-chevron-down"></span>
+            <span class="form-control">Sexo</span>            <select id="register_form_gender_input" data-check="gender" data-class-error="is-inverse" data-insert-value="true">
+                <option value="0">Sexo</option>
+                <option  value="F">
+                    Mujer                </option>
+                <option  value="M">
+                    Hombre                </option>
+            </select>
+        </div>
