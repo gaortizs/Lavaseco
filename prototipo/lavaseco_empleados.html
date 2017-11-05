@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!-- start: Meta -->
+	<meta charset="utf-8">
+	<title>Modulo de Nomina</title>
+	<meta name="description" content="Perfectum Dashboard Bootstrap Admin Template.">
+	<meta name="author" content="Łukasz Holeczek">
+	<!-- end: Meta -->
+	
+	<!-- start: Mobile Specific -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- end: Mobile Specific -->
+	
+	<!-- start: CSS -->
+	
+	<!-- bootstrap -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- page css files -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/css/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+	<link href="http://localhost:8888/bootstrap/perfectum2/assets/css/dataTables.css" rel="stylesheet">
+	
+	<!-- main style -->
+	<link href="assets/css/style.min.css" rel="stylesheet">
+
+	<!--[if lt IE 9 ]>
+		<link href="assets/css/style-ie.css" rel="stylesheet">
+	<![endif]-->
+	
+	<!-- end: CSS -->
+	
+
+	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		
+	  	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		
+	<![endif]-->
+
+	<!-- start: Favicon -->
+	<link rel="shortcut icon" href="http://localhost:8888/bootstrap/perfectum2/img/favicon.ico">
+	<!-- end: Favicon -->
+	
+		
+		
+		
+</head>
+
+<body>
+	
+	<!-- start: Header -->
+	<div class="navbar">
+		<div class="container">
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".sidebar-nav.nav-collapse">
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">  <span>LAVASECO</span></a>
+							
+			<!-- start: Header Menu -->
+			<div class="header-nav">
+				<ul class="nav navbar-nav pull-right">
+					<li class="dropdown hidden-xs">
+						<a class="btn dropdown-toggle" data-toggle="dropdown" href="table.html#">
+							<i class="fa fa-warning"></i> <span class="label label-important hidden-xs">2</span> <span class="label label-success hidden-xs">11</span>
+						</a>
+						<ul class="dropdown-menu notifications">
+							<li>
+								<span class="dropdown-menu-title">You have 11 notifications</span>
+							</li>	
+                        	<li>
+                                <a href="table.html#">
+									<i class="fa fa-user"></i> <span class="message">New user registration</span> <span class="time">1 min</span> 
+                                </a>
+                            </li>
+							<li>
+                                <a href="table.html#">
+									<i class="fa fa-comment"></i> <span class="message">New comment</span> <span class="time">7 min</span> 
+                                </a>
+                            </li>
+							<li>
+                                <a href="table.html#">
+									<i class="fa fa-comment"></i> <span class="message">New comment</span> <span class="time">8 min</span> 
+                                </a>
+                            </li>
+							<li>
+                                <a href="table.html#">
+									<i class="fa fa-comment"></i> <span class="message">New comment</span> <span class="time">16 min</span> 
+                                </a>
+                            </li>
+							<li>
+                                <a href="table.html#">
+									<i class="fa fa-user"></i> <span class="message">New user registration</span> <span class="time">36 min</span> 
+                                </a>
+                            </li>
+							<li>
+                                <a href="table.html#">
+									<i class="fa fa-shopping-cart"></i> <span class="message">2 items sold</span> <span class="time">1 hour</span> 
+                                </a>
+                            </li>
+							<li class="warning">
+                                <a href="table.html#">
+									<i class="fa fa-user"></i> <span class="message">User deleted account</span> <span class="time">2 hour</span> 
+                                </a>
+                            </li>
+							<li class="warning">
+                                <a href="table.html#">
+									<i class="fa fa-shopping-cart"></i> <span class="message">Transaction was canceled</span> <span class="time">6 hour</span> 
+                                </a>
+                            </li>
+							<li>
+                                <a href="table.html#">
+									<i class="fa fa-comment"></i> <span class="message">New comment</span> <span class="time">yesterday</span> 
+                                </a>
+                            </li>
+							<li>
+                                <a href="table.html#">
+									<i class="fa fa-user"></i> <span class="message">New user registration</span> <span class="time">yesterday</span> 
+                                </a>
+                            </li>
+                            <li>
+                        		<a class="dropdown-menu-sub-footer">View all notifications</a>
+							</li>	
+						</ul>
+					</li>
+					
+					
+					<li>
+						<a class="btn" href="table.html#">
+							<i class="fa fa-wrench"></i>
+						</a>
+					</li>
+					<!-- start: User Dropdown -->
+					<li class="dropdown hidden-xs">
+						<a class="btn dropdown-toggle" data-toggle="dropdown" href="table.html#">
+							<i class="fa fa-user"></i>
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="table.html#"><i class="fa fa-user"></i> Profile</a></li>
+							<li><a href="login.html"><i class="fa fa-off"></i> Logout</a></li>
+						</ul>
+					</li>
+					<!-- end: User Dropdown -->
+				</ul>
+			</div>
+			<!-- end: Header Menu -->
+			
+		</div>
+	</div>
+	<!-- start: Header -->
+	
+		<div class="container">
+		<div class="row">
+					<!-- start: Main Menu -->
+			<div class="col-sm-2 main-menu-span">
+				<div class="sidebar-nav nav-collapse collapse navbar-collapse">
+					<ul class="nav nav-tabs nav-stacked main-menu">
+				
+						<li><a href="typography.html"><i class="fa fa-font"></i><span class="hidden-sm"> Inicio </span></a></li>
+						<li><a href="gallery.html"><i class="fa fa-picture-o"></i><span class="hidden-sm"> Nomina</span></a></li>
+						<li><a href="table.html"><i class="fa fa-align-justify"></i><span class="hidden-sm"> Empleados</span></a></li>
+						<li><a href="calendar.html"><i class="fa fa-calendar"></i><span class="hidden-sm"> Inventario</span></a></li>
+						<li><a href="calendar.html"><i class="fa fa-calendar"></i><span class="hidden-sm"> Financiero</span></a></li>
+						
+					</ul>
+				</div><!--/.well -->
+			</div><!--/col-->
+			<!-- end: Main Menu -->
+			
+			<noscript>
+				<div class="alert alert-block col-sm-10">
+					<h4 class="alert-heading">Warning!</h4>
+					<p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.</p>
+				</div>
+			</noscript>
+			
+			<div id="content" class="col-sm-10">
+			<!-- start: Content -->
+			
+
+			<div>
+				<hr>
+				<ul class="breadcrumb">
+					<li>
+						<a href="table.html#">Inicio</a>
+					</li>
+					<li>
+						<a href="table.html#">Nomina</a>
+					</li>
+					<li>
+						<a href="table.html#">Lista de empleados</a>
+					</li>
+				</ul>
+				<hr>
+			</div>
+			
+			<div class="row">		
+				<div class="col-lg-12">
+					<div class="box">
+						<div class="box-header" data-original-title>
+							<h2><i class="fa fa-user"></i><span class="break"></span>Empleados</h2>
+							<div class="box-icon">
+								<a href="table.html#" class="btn-setting"><i class="fa fa-wrench"></i></a>
+								<a href="table.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+								<a href="table.html#" class="btn-close"><i class="fa fa-times"></i></a>
+							</div>
+						</div>
+						<div class="box-content">
+							<table class="table table-striped table-bordered bootstrap-datatable datatable">
+							  <thead>
+								  <tr>
+									  <th>Nombre</th>
+									  <th>Fecha de inicio de contrato</th>
+									  <th>Rol</th>
+									  <th>Estatus</th>
+									  <th>Acciones</th>
+								  </tr>
+							  </thead>   
+							  <tbody>
+								<tr>
+									<td>Anton Phunihel</td>
+									<td>2012/01/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-success">Active</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>  
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>  
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Alphonse Ivo</td>
+									<td>2012/01/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-success">Active</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>  
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>  
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Thancmar Theophanes</td>
+									<td>2012/01/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-success">Active</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>  
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>  
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+										</a>
+									</td>
+									</td>
+								</tr>
+								<tr>
+									<td>Walerian Khwaja</td>
+									<td>2012/01/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-success">Active</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Clemens Janko</td>
+									<td>2012/02/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-important">Banned</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Chidubem Gottlob</td>
+									<td>2012/02/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-important">Banned</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Hristofor Sergio</td>
+									<td>2012/03/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-warning">Pending</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Tadhg Griogair</td>
+									<td>2012/03/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-warning">Pending</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Pollux Beaumont</td>
+									<td>2012/01/21</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-success">Active</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Adam Alister</td>
+									<td>2012/01/21</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-success">Active</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Carlito Roffe</td>
+									<td>2012/08/23</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-important">Banned</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Sana Amrin</td>
+									<td>2012/08/23</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-important">Banned</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Adinah Ralph</td>
+									<td>2012/06/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-default">Inactive</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Dederick Mihail</td>
+									<td>2012/06/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-default">Inactive</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Hipólito András</td>
+									<td>2012/03/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-warning">Pending</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Fricis Arieh</td>
+									<td>2012/03/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-warning">Pending</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Scottie Maximilian</td>
+									<td>2012/03/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-warning">Pending</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Bao Gaspar</td>
+									<td>2012/01/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-success">Active</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Tullio Luka</td>
+									<td>2012/02/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-important">Banned</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Felice Arseniy</td>
+									<td>2012/02/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-default">Inactive</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Finlay Alf</td>
+									<td>2012/02/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-default">Inactive</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Theophilus Nala</td>
+									<td>2012/03/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-warning">Pending</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Sullivan Robert</td>
+									<td>2012/03/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-warning">Pending</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Kristóf Filiberto</td>
+									<td>2012/01/21</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-success">Active</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Kuzma Edvard</td>
+									<td>2012/01/21</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-success">Active</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Bünyamin Kasper</td>
+									<td>2012/08/23</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-important">Banned</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Crofton Arran</td>
+									<td>2012/08/23</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-important">Banned</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Bernhard Shelah</td>
+									<td>2012/06/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-default">Inactive</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Grahame Miodrag</td>
+									<td>2012/03/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-warning">Pending</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Innokentiy Celio</td>
+									<td>2012/03/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-warning">Pending</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Kostandin Warinhari</td>
+									<td>2012/03/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-warning">Pending</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Ajith Hristijan</td>
+									<td>2012/03/01</td>
+									<td>Operador</td>
+									<td>
+										<span class="label label-warning">Pending</span>
+									</td>
+									<td>
+										<a class="btn btn-success" href="table.html#">
+											<i class="fa fa-search-plus "></i>                                            
+										</a>
+										<a class="btn btn-info" href="table.html#">
+											<i class="fa fa-edit "></i>                                            
+										</a>
+										<a class="btn btn-danger" href="table.html#">
+											<i class="fa fa-trash-o "></i> 
+
+										</a>
+									</td>
+								</tr>
+							  </tbody>
+						  </table>            
+						</div>
+					</div>
+				</div><!--/col-->
+			
+			</div><!--/row-->
+
+		
+				
+				
+				
+				</div><!--/col-->
+			</div><!--/row-->
+			
+			
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+		
+	
+		
+		
+				
+	</div><!--/.fluid-container-->
+
+	<!-- start: JavaScript-->
+	<!--[if !IE]>-->
+
+			<script src="assets/js/jquery-2.0.3.min.js"></script>
+
+	<!--<![endif]-->
+
+	<!--[if IE]>
+	
+		<script src="assets/js/jquery-1.10.2.min.js"></script>
+	
+	<![endif]-->
+
+	<!--[if !IE]>-->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+		</script>
+
+	<!--<![endif]-->
+
+	<!--[if IE]>
+	
+		<script type="text/javascript">
+	 	window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+		</script>
+		
+	<![endif]-->
+	<script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	
+	
+	<!-- page scripts -->
+	<script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="assets/js/jquery.dataTables.min.js"></script>
+	<script src="assets/js/dataTables.bootstrap.min.js"></script>
+	
+	<!-- theme scripts -->
+	<script src="assets/js/default.min.js"></script>
+	<script src="assets/js/core.min.js"></script>
+	
+	<!-- inline scripts related to this page -->
+	<script src="assets/js/pages/table.js"></script>
+	
+		<!-- end: JavaScript-->
+	
+</body>
+</html>
