@@ -1,0 +1,77 @@
+header {
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+	background:#000;
+}
+#name-company{
+	text-align: left;
+	font-weight: bold;
+	color: white;
+	font-family: monospace;
+}
+span {
+  display: inline-block;
+  vertical-align: middle;
+}
+#logo{
+	align:center;
+}
+.border-image{
+	border-radius: 50%;
+	width: 100px;
+	border-style: solid;
+}
+
+h1{
+	text-align: center;
+	color: #000000;
+	font-weight: bold;
+	
+}
+
+html, body{
+	height: 100%;
+}
+
+.modulo{
+	height: 100%;
+	overflow: auto;
+}
+
+.panel{
+	background-color: black;
+	color: white;
+	height: inherit;
+	overflow: visible;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.form-register{
+	padding: 5% 5% 0 5%;
+}
+
+input{
+	width: 100%;
+}
+
+#inputs{
+	padding-bottom: 10pt;
+}
