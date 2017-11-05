@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="Inventario_View.css">
+		
+		<title> Módulo de Inventario </title>
+		
+		<header class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2" align="center">
+					<img class="img-responsive border-image" src="Logo.jpg" alt="Logo de la empresa">
+				</div>
+				<div class="col-sm-4" id="logo">
+					<h1 id="name-company"><span>LAVASECO TOTAL</span></h1>
+				</div>
+			</div>
+		</header>
+		
+	</head>
+	<body>
+		
+		<div class="row modulo">
+			<div class="col-xs-4 panel">
+				<nav>
+					<ul>
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Nómina</a></li>
+						<li><a href="#">Empleados</a></li>
+						<li><a href="#">Inventario</a></li>
+						<li><a href="#">Financiero</a></li>					
+					</ul>
+				</nav>
+			</div>
+	
+			<div class="Table-Inventario col-xs-8">
+				<table class="table">
+					<tbody>
+						<tr>
+							<td id="heading" ><span>CÓDIGO DEL <br> PRODUCTO</span></td>
+							<td id="heading">
+								<p><span>TIPO DE <br> PRODUCTO</span></p>
+							</td>
+							<td id="heading"><span>DESCRIPCIÓN</span></td>
+							<td id="heading"><span>CANTIDAD</span></td>
+							<td id="heading">
+								<p><span>FECHA DE <br> MODIFICACIÓN</span></p>
+							</td>
+						</tr>
+						<tr>
+							<td id="bor">0</td>
+							<td id="bor">Tecnológico</td>
+							<td id="bor">Computador</td>
+							<td id="bor">10</td>
+							<td id="bor">27/10/2017</td>
+							<td id="buttons">
+								<table>
+									<tr>
+										<td><button type="button" class="btn btn-default btn-primary"><span class="glyphicon glyphicon-pencil"></span></button></td>
+										<td><button type="button" class="btn btn-default btn-danger"><span class="glyphicon glyphicon-remove"></span></button></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td id="bor">1</td>
+							<td id="bor">Suministro</td>
+							<td id="bor">Percloro</td>
+							<td id="bor">500</td>
+							<td id="bor">27/10/2017</td>
+							<td id="buttons">
+								<table>
+									<tr>
+										<td><button type="button" class="btn btn-default btn-primary"><span class="glyphicon glyphicon-pencil"		></span></button></td>
+										<td><button type="button" class="btn btn-default btn-danger"><span class="glyphicon glyphicon-remove"></span></button></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td id="bor">2</td>
+							<td id="bor">Instalación</td>
+							<td id="bor">Lavadora</td>
+							<td id="bor">10</td>
+							<td id="bor">15/10/2017</td>
+							<td id="buttons">
+								<table>
+									<tr>
+										<td><button type="button" class="btn btn-default btn-primary"><span class="glyphicon glyphicon-pencil"></span></button></td>
+										<td><button type="button" class="btn btn-default btn-danger"><span class="glyphicon glyphicon-remove"></span></button></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td id="bor">3</td>
+							<td id="bor">Instalación</td>
+							<td id="bor">Plancha</td>
+							<td id="bor">5</td>
+							<td id="bor">15/10/2017</td>
+							<td id="buttons">
+								<table>
+									<tr>
+										<td><button type="button" class="btn btn-default btn-primary"><span class="glyphicon glyphicon-pencil"></span></button></td>
+										<td><button type="button" class="btn btn-default btn-danger"><span class="glyphicon glyphicon-remove"></span></button></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td id="bor">4</td>
+							<td id="bor">Suministro</td>
+							<td id="bor">Suavizante</td>
+							<td id="bor">200</td>
+							<td id="bor">27/10/2017</td>
+							<td id="buttons">
+								<table>
+									<tr>
+										<td><button type="button" class="btn btn-default btn-primary"><span class="glyphicon glyphicon-pencil"></span></button></td>
+										<td><button type="button" class="btn btn-default btn-danger"><span class="glyphicon glyphicon-remove"></span></button></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td id="bor">5</td>
+							<td id="bor">Suministro</td>
+							<td id="bor">Desmanchador</td>
+							<td id="bor">200</td>
+							<td id="bor">27/10/2017</td>
+							<td id="buttons">
+								<table>
+									<tr>
+										<td><button type="button" class="btn btn-default btn-primary"><span class="glyphicon glyphicon-pencil"></span></button></td>
+										<td><button type="button" class="btn btn-default btn-danger"><span class="glyphicon glyphicon-remove"></span></button></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					
+						<tr>
+							<td id="bor">&nbsp;</td>
+							<td id="bor">&nbsp;</td>
+							<td id="bor">&nbsp;</td>
+							<td id="bor">&nbsp;</td>
+							<td id="bor">&nbsp;</td>
+							<td id="buttons">
+								<table>
+									<tr>
+										<td><button type="button" class="btn btn-default btn-success"><span class="glyphicon glyphicon-ok"></span></button></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div align="center">
+				<input class="btn btn-default btn-primary" type="button" value="Generar Reporte" />
+			</div>
+		</div>
+	</body>
+</html>
